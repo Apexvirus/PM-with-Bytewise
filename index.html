@@ -59,6 +59,352 @@
 
         <input type="submit" id="submitButton" value="Submit">
     </form>
+    <div class="panel-group accordion" id="add_challenge_accordian">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <div class="collapsible-link in-collapsible-fix in-position-rel">
+                        <a class="accordion-toggle no-before accordion-toggle-styled collapsed" data-toggle="collapse" aria-expanded="false" data-parent="#add_challenge_accordian" href="#first_collapsible_div">
+                            Add Challenge
+                            <span class="plus-icon chevron down"></span>
+                            <span class="minus-icon chevron up"></span>
+                        </a>
+                    </div>
+                </h4>
+            </div>
 
+            
+
+            <div id="first_collapsible_div" class="panel-collapse collapse in" aria-expanded="true">
+                <div class="panel-body">
+                    <div class="container-fluid" style="margin-left: 0px !important; padding-left: 0px !important;">
+                        <div class="row">
+                            <div class="col-md-12" style="margin-left: 0px !important;">
+                                <div class="col-sm-3">
+                                    <div class="form-group ">
+                                        <label for="code">Challenge Code:
+                                            <span class="required" aria-required="true">*</span>
+                                        </label>
+                                        <input type="text" name="code" placeholder="Enter Challenge Code" readonly="" value="jbc667fe19591e10" class="form-control" data-rule-required="true" data-msg-required="Please Enter Challenge Code.">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group ">
+                                        <label>Challenge Title
+                                            <span class="required" aria-required="true">*</span>
+                                        </label>
+                                        <input type="text" name="title" value="" placeholder="Enter title" class="form-control" data-rule-required="true" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group ">
+                                        <label for="joining_date_from">Joining Date From:
+                                            <span class="required" aria-required="true">*</span>
+                                        </label>
+
+                                        <div class="input-group">
+                                            <input type="date" name="joining_date_from" id="joining_date_from" value="" class="form-control " data-rule-required="true" data-msg-required="Select date." aria-required="true" min="2024-06-29">
+                                            <span class="input-group-addon" style="background:#BA0C2F;color:white">
+                                                <span class="input-group-text" id="basic-addon1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-keyboard" viewBox="0 0 16 16">
+                                                        <path d="M14 5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12zM2 4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2z"></path>
+                                                        <path d="M13 10.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm0-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-5 0A.25.25 0 0 1 8.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 8 8.75v-.5zm2 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25v-.5zm1 2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-5-2A.25.25 0 0 1 6.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 6 8.75v-.5zm-2 0A.25.25 0 0 1 4.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 4 8.75v-.5zm-2 0A.25.25 0 0 1 2.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 8.75v-.5zm11-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-2 0a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-2 0A.25.25 0 0 1 9.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 9 6.75v-.5zm-2 0A.25.25 0 0 1 7.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 7 6.75v-.5zm-2 0A.25.25 0 0 1 5.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 5 6.75v-.5zm-3 0A.25.25 0 0 1 2.25 6h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5A.25.25 0 0 1 2 6.75v-.5zm0 4a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm2 0a.25.25 0 0 1 .25-.25h5.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-5.5a.25.25 0 0 1-.25-.25v-.5z"></path>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group ">
+                                        <label for="valid_from">Valid From:
+                                            <span class="required" aria-required="true">*</span>
+                                        </label>
+                                        <div class="input-group">
+                                            <input type="date" name="valid_from" id="valid_from" onchange="validateDate()" value="" class="form-control " data-rule-required="true" data-msg-required="Select date." aria-required="true" min="2024-06-29">
+                                            <span class="input-group-addon" style="background:#BA0C2F;color:white">
+                                                <span class="input-group-text" id="basic-addon1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-keyboard" viewBox="0 0 16 16">
+                                                        <path d="M14 5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12zM2 4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2z"></path>
+                                                        <path d="M13 10.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm0-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-5 0A.25.25 0 0 1 8.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 8 8.75v-.5zm2 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25v-.5zm1 2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-5-2A.25.25 0 0 1 6.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 6 8.75v-.5zm-2 0A.25.25 0 0 1 4.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 4 8.75v-.5zm-2 0A.25.25 0 0 1 2.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 8.75v-.5zm11-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-2 0a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-2 0A.25.25 0 0 1 9.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 9 6.75v-.5zm-2 0A.25.25 0 0 1 7.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 7 6.75v-.5zm-2 0A.25.25 0 0 1 5.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 5 6.75v-.5zm-3 0A.25.25 0 0 1 2.25 6h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5A.25.25 0 0 1 2 6.75v-.5zm0 4a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm2 0a.25.25 0 0 1 .25-.25h5.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-5.5a.25.25 0 0 1-.25-.25v-.5z"></path>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group ">
+                                        <label for="">Duration Criteria:
+                                            <span class="required" aria-required="true">*</span>
+                                        </label>
+                                        <select name="criteria_duration" id="criteria_duration" class="form-control" onchange="calculate_valid_to_data()">
+                                            <option value="day">Day
+                                            </option>
+                                            <option value="week">Week
+                                            </option>
+                                            <option value="month">Month
+                                            </option>
+                                            <option value="year">Year
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <label for="criteria_duration_count">Count
+                                            <span class="required" aria-required="true">*</span>
+                                        </label>
+                                        <input type="number" name="criteria_duration_count" id="criteria_duration_count" value="" onchange="calculate_valid_to_data()" placeholder="Enter count" class="form-control" data-rule-required="true" aria-required="true">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <div class="form-group ">
+                                        <label for="valid_to">Valid Till:
+                                            <span class="required" aria-required="true">*</span>
+                                        </label>
+                                        <div class="input-group">
+                                            <input type="date" name="valid_to" id="valid_to" value="" readonly="" class="form-control " data-rule-required="true" data-msg-required="Select date." aria-required="true" min="">
+                                            <span class="input-group-addon" style="background:#BA0C2F;color:white">
+                                                <span class="input-group-text" id="basic-addon1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-keyboard" viewBox="0 0 16 16">
+                                                        <path d="M14 5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12zM2 4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2z"></path>
+                                                        <path d="M13 10.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm0-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-5 0A.25.25 0 0 1 8.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 8 8.75v-.5zm2 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25v-.5zm1 2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-5-2A.25.25 0 0 1 6.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 6 8.75v-.5zm-2 0A.25.25 0 0 1 4.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 4 8.75v-.5zm-2 0A.25.25 0 0 1 2.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 8.75v-.5zm11-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-2 0a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-2 0A.25.25 0 0 1 9.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 9 6.75v-.5zm-2 0A.25.25 0 0 1 7.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 7 6.75v-.5zm-2 0A.25.25 0 0 1 5.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 5 6.75v-.5zm-3 0A.25.25 0 0 1 2.25 6h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5A.25.25 0 0 1 2 6.75v-.5zm0 4a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm2 0a.25.25 0 0 1 .25-.25h5.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-5.5a.25.25 0 0 1-.25-.25v-.5z"></path>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group tick_correction">
+                                        <label for="">Status:
+                                            <span class="required" aria-required="true">*</span>
+                                        </label>
+                                        <select name="status" class="form-control select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                            <option value="active">Active</option>
+                                            <option value="in-active">In-Active</option>
+                                        </select><span class="select2 select2-container select2-container--bootstrap" dir="ltr"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-status-45-container"><span class="select2-selection__rendered" id="select2-status-45-container" title="Active">Active</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <div class="form-group ">
+                                        <label for="challenge_image">Upload Image<span class="required">*</span></label>
+                                        <input class="form-control" type="file" id="challenge_image" name="image" data-rule-required="true" data-msg-required="Select Icon" accept="image/*">
+                                    </div>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="form-group">
+                                        <label for="description">Description
+                                            <span class="required" aria-required="true">*</span>
+                                        </label>
+                                        <input type="text" name="description" value="" placeholder="Enter Description" class="form-control " data-rule-required="true" aria-required="true">
+                                    </div>
+                                </div>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <div class="collapsible-link in-collapsible-fix in-position-rel">
+                        <a class="accordion-toggle no-before accordion-toggle-styled collapsed" data-toggle="collapse" aria-expanded="false" data-parent="#add_challenge_accordian" href="#third_collapsible_div">
+                            Challenge Applicability
+                            <span class="plus-icon chevron down"></span>
+                            <span class="minus-icon chevron up"></span>
+                        </a>
+                    </div>
+                </h4>
+            </div>
+            <div id="third_collapsible_div" class="panel-collapse collapse" aria-expanded="false">
+                <div class="panel-body">
+                    <div class="container-fluid" style="margin-left: 0px !important; padding-left: 0px !important;">
+                        <div class="row">
+                            <div class="col-md-12" style="margin-left: 0px !important;">
+                                <div class="col-sm-4">
+                                    <div class="form-group ">
+                                        <label for="">Age:<span class="required" aria-required="true">*</span></label>
+                                        <select name="challenge_applicabilty_age_ids[]" multiple="" class="form-control select2 select2-hidden-accessible" id="age_groups" tabindex="-1" aria-hidden="true">
+                                                                                            <option value="1">20 To 25
+                                                </option>
+                                                                                            <option value="2">26 To 30
+                                                </option>
+                                                                                            <option value="3">31 To 35
+                                                </option>
+                                                                                            <option value="4">36 To 40
+                                                </option>
+                                                                                            <option value="5">41 To 45
+                                                </option>
+                                                                                            <option value="6">46 To 50
+                                                </option>
+                                                                                            <option value="7">51 To 100
+                                                </option>
+                                                                                    </select><span class="select2 select2-container select2-container--bootstrap select2-container--below" dir="ltr"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-selection__choice" title="20 To 25
+                                                "><span class="select2-selection__choice__remove" role="presentation">×</span>20 To 25
+                                                </li><li class="select2-selection__choice" title="26 To 30
+                                                "><span class="select2-selection__choice__remove" role="presentation">×</span>26 To 30
+                                                </li><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group ">
+                                        <label for="">Gender:<span class="required" aria-required="true">*</span></label>
+                                        <select name="applicability_gender[]" multiple="" class="form-control select2 select2-hidden-accessible" id="applicability_gender" tabindex="-1" aria-hidden="true">
+                                                                                            <option value="male">male
+                                                </option>
+                                                                                            <option value="female">female
+                                                </option>
+                                                                                    </select><span class="select2 select2-container select2-container--bootstrap select2-container--below" dir="ltr"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-selection__choice" title="male
+                                                "><span class="select2-selection__choice__remove" role="presentation">×</span>male
+                                                </li><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <div class="collapsible-link in-collapsible-fix in-position-rel">
+                        <a class="accordion-toggle no-before accordion-toggle-styled collapsed" data-toggle="collapse" aria-expanded="false" data-parent="#add_challenge_accordian" href="#second_collapsible_div">
+                            Challenge Events
+                            <span class="plus-icon chevron down"></span>
+                            <span class="minus-icon chevron up"></span>
+                        </a>
+                    </div>
+                </h4>
+            </div>
+            <div id="second_collapsible_div" class="panel-collapse collapse" aria-expanded="false">
+                <div class="panel-body">
+                    <div class="container-fluid" style="margin-left: 0px !important; padding-left: 0px !important;">
+                        <div>
+                            <div class="row" style="margin-left: 0px !important;">
+                                <div class="row d2c-mb-3">
+                                    <div class="d2c-class-container">
+                                                                                                                            <div class="class-box classBox" id="">
+                                                <label class="d2c-checkbox-wrapper">
+                                                    <input type="checkbox" class="challengeEventChecbox" value="9" event-id="9 " event-unit="Days " event-name="Active Days" id="event_9">
+                                                    <span class="checkmark" style="left: 32px; top: 10px;"></span>
+                                                </label>
+                                                <img style="width: 100%" src="https://stagingenv.jubileelife.com/wellness_event_file/9/Active%20Days.png" alt="icon">
+                                                <h4 class="class-name">Active Days</h4>
+                                            </div>
+                                            
+                                                                                    <div class="class-box classBox" id="">
+                                                <label class="d2c-checkbox-wrapper">
+                                                    <input type="checkbox" class="challengeEventChecbox" value="10" event-id="10 " event-unit="Hours " event-name="Swimming" id="event_10">
+                                                    <span class="checkmark" style="left: 32px; top: 10px;"></span>
+                                                </label>
+                                                <img style="width: 100%" src="https://stagingenv.jubileelife.com/wellness_event_file/10/Swimming.png" alt="icon">
+                                                <h4 class="class-name">Swimming</h4>
+                                            </div>
+                                            
+                                                                                    <div class="class-box classBox" id="">
+                                                <label class="d2c-checkbox-wrapper">
+                                                    <input type="checkbox" class="challengeEventChecbox" value="11" event-id="11 " event-unit="KM " event-name="Walk + Run" id="event_11">
+                                                    <span class="checkmark" style="left: 32px; top: 10px;"></span>
+                                                </label>
+                                                <img style="width: 100%" src="https://stagingenv.jubileelife.com/wellness_event_file/11/Running.png" alt="icon">
+                                                <h4 class="class-name">Walk + Run</h4>
+                                            </div>
+                                            
+                                                                                    <div class="class-box classBox" id="">
+                                                <label class="d2c-checkbox-wrapper">
+                                                    <input type="checkbox" class="challengeEventChecbox" value="13" event-id="13 " event-unit="Kcal " event-name="Calories" id="event_13">
+                                                    <span class="checkmark" style="left: 32px; top: 10px;"></span>
+                                                </label>
+                                                <img style="width: 100%" src="https://stagingenv.jubileelife.com/wellness_event_file/13/Calories.png" alt="icon">
+                                                <h4 class="class-name">Calories</h4>
+                                            </div>
+                                            
+                                                                                    <div class="class-box classBox" id="">
+                                                <label class="d2c-checkbox-wrapper">
+                                                    <input type="checkbox" class="challengeEventChecbox" value="14" event-id="14 " event-unit="Hours " event-name="Sleep" id="event_14">
+                                                    <span class="checkmark" style="left: 32px; top: 10px;"></span>
+                                                </label>
+                                                <img style="width: 100%" src="https://stagingenv.jubileelife.com/wellness_event_file/14/Sleep.png" alt="icon">
+                                                <h4 class="class-name">Sleep</h4>
+                                            </div>
+                                            
+                                                                                    <div class="class-box classBox" id="">
+                                                <label class="d2c-checkbox-wrapper">
+                                                    <input type="checkbox" class="challengeEventChecbox" value="15" event-id="15 " event-unit="BPM " event-name="Heart Rate" id="event_15">
+                                                    <span class="checkmark" style="left: 32px; top: 10px;"></span>
+                                                </label>
+                                                <img style="width: 100%" src="https://stagingenv.jubileelife.com/wellness_event_file/15/Heart%20Rate.png" alt="icon">
+                                                <h4 class="class-name">Heart Rate</h4>
+                                            </div>
+                                            
+                                                                                    <div class="class-box classBox" id="">
+                                                <label class="d2c-checkbox-wrapper">
+                                                    <input type="checkbox" class="challengeEventChecbox" value="16" event-id="16 " event-unit="Steps " event-name="Steps" id="event_16">
+                                                    <span class="checkmark" style="left: 32px; top: 10px;"></span>
+                                                </label>
+                                                <img style="width: 100%" src="https://stagingenv.jubileelife.com/wellness_event_file/16/Steps.png" alt="icon">
+                                                <h4 class="class-name">Steps</h4>
+                                            </div>
+                                            
+                                                                            </div>
+                                </div>
+
+
+
+
+
+
+                                                                
+                                <div id="wellness_event_fields_div">
+                                                                    <div class="event_fields_16 ">                       <input type="hidden" value="" name="challenge_events[1][challenge_id]">                       <input type="hidden" value="16 " name="challenge_events[1][event_id]">                           <div class="row clone_after_1">                               <div class="col-12">                                   <h2 class="in-endorse-heading addActive_days">Steps  <button class="btn btn-md btn-primary addBtn" type="button" event-id="16 " event-unit="Steps " event-name="Steps">+</button>                                     </h2>                               </div>                           </div>                               <div class="row group_16 " style="padding-inline: 35px;margin-top: 20px;">                                   <div class="col-md-3">                                       <div class="form-group ">                                           <label>Select Age Group:                                               <span class="required" aria-required="true">*</span>                                           </label>                                           <select name="challenge_events[1][event_age_groups]" class="form-control event_age_groups_dropdown_1"><option value="1">20 To 25
+                                                </option><option value="2">26 To 30
+                                                </option></select>                                       </div>                                   </div>                                   <div class="col-md-3">                                       <div class="form-group ">                                           <label>Gender:                                               <span class="required" aria-required="true">*</span>                                           </label>                                           <select name="challenge_events[1][event_gender]" class="form-control event_gender_groups_dropdown_1"><option value="male">male
+                                                </option></select>                                       </div>                                   </div>                                   <div class="col-sm-3">                                       <div class="form-group ">                                           <label for="code">Parameter Count:                                               <span class="required" aria-required="true">*</span>                                           </label>                                           <input type="number" name="challenge_events[1][parameter_count]" placeholder="Enter Parameter Count" class="form-control" data-rule-required="true" data-msg-required="Please Enter Parameter Count.">                                       </div>                                   </div>                                   <div class="col-sm-3 parameter_count_max" style="display: none">                                       <div class="form-group ">                                           <label for="code">Parameter Count Max:                                                <span class="required" aria-required="true">*</span>                                            </label>                                            <input type="number" name="challenge_events[1][parameter_count_max]" class="form-control" placeholder="Enter Parameter Count Max">                                        </div>                                    </div>                                   <div class="col-md-3">                                       <div class="form-group">                                           <label>Unit:                                                <span class="required" aria-required="true">*</span>                                            </label>                                            <select readonly="" name="unit[]" class="form-control">                                                <option value="Steps " selected="">Steps </option>                                            </select>                                        </div>                                    </div>                                    <div class="col-md-3">                                        <div class="form-group ">                                            <label>Criteria Duration:                                                <span class="required" aria-required="true">*</span>                                            </label>                                            <select readonly="" name="challenge_events[1][criteria_duration]" class="form-control">                                                <option value="day">Daily</option>                                                                                            </select>                                        </div>                                    </div>                                    <div class="col-sm-3">                                        <div class="form-group ">                                            <label>Challenge Points:                                                <span class="required" aria-required="true">*</span>                                            </label>                                            <input type="number" name="challenge_events[1][challenge_points]" placeholder="Enter Challenge Count" class="form-control" data-rule-required="true" data-msg-required="Please Enter Parameter Count.">                                        </div>                                    </div>                                    <div class="col-sm-2" style="display: flex;align-items: center;">                                      &nbsp;                                     </div>                                </div>                            <div class="row 2" style="padding-inline: 35px;margin-top: 20px;">                       <input type="hidden" value="" name="challenge_events[2][challenge_id]">                       <input type="hidden" value="16 " name="challenge_events[2][event_id]">                                   <div class="col-md-3">                                       <div class="form-group ">                                           <label>Select Age Group:                                               <span class="required" aria-required="true">*</span>                                           </label>                                           <select name="challenge_events[2][event_age_groups]" class="form-control event_age_groups_dropdown_2"><option value="1">20 To 25
+                                                </option><option value="2">26 To 30
+                                                </option></select>                                       </div>                                   </div>                                   <div class="col-md-3">                                       <div class="form-group ">                                           <label>Gender:                                               <span class="required" aria-required="true">*</span>                                           </label>                                           <select name="challenge_events[2][event_gender]" class="form-control event_gender_groups_dropdown_2"><option value="male">male
+                                                </option></select>                                       </div>                                   </div>                                   <div class="col-sm-3">                                       <div class="form-group ">                                           <label for="code">Parameter Count:                                               <span class="required" aria-required="true">*</span>                                           </label>                                           <input type="number" name="challenge_events[2][parameter_count]" placeholder="Enter Parameter Count" class="form-control" data-rule-required="true" data-msg-required="Please Enter Parameter Count.">                                       </div>                                   </div>                                   <div class="col-sm-3 parameter_count_max" style="display: none">                                       <div class="form-group ">                                           <label for="code">Parameter Count Max:                                                <span class="required" aria-required="true">*</span>                                            </label>                                            <input type="number" name="challenge_events[2][parameter_count_max]" class="form-control" placeholder="Enter Parameter Count Max">                                        </div>                                    </div>                                   <div class="col-md-3">                                       <div class="form-group">                                           <label>Unit:                                                <span class="required" aria-required="true">*</span>                                            </label>                                            <select readonly="" name="unit[]" class="form-control">                                                <option value="Steps " selected="">Steps </option>                                            </select>                                        </div>                                    </div>                                    <div class="col-md-3">                                        <div class="form-group ">                                            <label>Criteria Duration:                                                <span class="required" aria-required="true">*</span>                                            </label>                                            <select readonly="" name="challenge_events[2][criteria_duration]" class="form-control">                                                <option value="day">Daily</option>                                                                                            </select>                                        </div>                                    </div>                                    <div class="col-sm-3">                                        <div class="form-group ">                                            <label>Challenge Points:                                                <span class="required" aria-required="true">*</span>                                            </label>                                            <input type="number" name="challenge_events[2][challenge_points]" placeholder="Enter Challenge Count" class="form-control" data-rule-required="true" data-msg-required="Please Enter Parameter Count.">                                        </div>                                    </div>                                    <div class="col-sm-3" style="display: flex;align-items: center;">                                      <a href="javascript:void(0);" class="removeBtn">Remove</a>                                     </div>                                </div></div></div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+    </div>
 </body>
+    
 </html>
